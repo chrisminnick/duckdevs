@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Duck Devs</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"
+          >DUCK DEVS
+          <img src="img/duck_devs_transparent.png" alt="Duck Devs Logo" />
+        </a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">HOME</a>
+          </li>
+          <li class="navbar__item" id="dropdown__head">
+            <a class="navbar__links">PROJECTS</a>
+            <ul class="dropdown__content">
+              <li><a href="leaderboard.html">Leaderboard</a></li>
+              <li><a href="duckarmy.html">Duck Army</a></li>
+              <li><a href="duckpond.html">Duck Pond</a></li>
+              <li><a href="ducksweeper.html">DuckSweeper</a></li>
+              <li><a href="duckracer.html">Duck Racer</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a href="people.html" class="navbar__links">TEAM MEMBERS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <audio id="audioPlayer" src="./duck.mp3"></audio>
+
+    <h1>Quack!</h1>
+    <p>Welcome to Duck Devs!</p>
+    <p>Click the button below to see a duck!</p>
+    <button class="homepage_button" onclick="getDuck()">Get Duck</button>
+    <div id="name"></div>
+    <img id="duckImage" width="160" height="160" />
+    <div id="duck"></div>
+    <div id="duckRace">
+      <div id="racingDuck0" class="racingDuck">🦆</div>
+    </div>
+
+    <h2>Countdown Timer</h2>
+    <label for="duration">Enter duration (Minutes):</label>
+    <input type="number" id="duration" min="1" required />
+    <div class="timer" id="timer">00:00:00</div>
+
+    <button class="homepage_button" id="duckRaceButton">Start Race</button>
+    <button class="homepage_button" id="duckStopRaceButton">Stop Race</button>
+    <button class="homepage_button" id="addDuckButton">Add Duck</button>
+    <button class="homepage_button" id="removeDuckButton">Remove Duck</button>
+    <button class="homepage_button" id="resetDucksButton">
+      Reset Duck Positions
+    </button>
+  </body>
+</html>

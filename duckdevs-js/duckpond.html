@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to the Duck Pond!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/people.css" />
+    <script defer src="js/duckpond.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #pond {
+        position: relative;
+        width: 700px;
+        height: 400px;
+        border: 2px solid #000;
+        background-color: #00bfff;
+      }
+      .duck {
+        position: absolute;
+        font-size: 2em;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"
+          >DUCK DEVS
+          <img src="img/duck_devs_transparent.png" alt="Duck Devs Logo" />
+        </a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">HOME</a>
+          </li>
+          <li class="navbar__item" id="dropdown__head">
+            <a class="navbar__links">PROJECTS</a>
+            <ul class="dropdown__content">
+              <li><a href="leaderboard.html">Leaderboard</a></li>
+              <li><a href="duckarmy.html">Duck Army</a></li>
+              <li><a href="duckpond.html">Duck Pond</a></li>
+              <li><a href="ducksweeper.html">DuckSweeper</a></li>
+              <li><a href="duckracer.html">Duck Racer</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a href="people.html" class="navbar__links">TEAM MEMBERS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Welcome to the Duck Pond!</h1>
+    <div id="pond"></div>
+    <button id="addDuck">Add Duck</button>
+    <button id="removeDuck">Remove Duck</button>
+    <button id="addBread">Add Bread</button>
+    <button id="removeBread">Remove Bread</button>
+    <script src="js/duckpond.js"></script>
+  </body>
+</html>

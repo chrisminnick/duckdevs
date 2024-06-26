@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Duck Devs</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/duckarmy.css" />
+    <script defer src="js/duckarmy.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"
+          >DUCK DEVS
+          <img src="img/duck_devs_transparent.png" alt="Duck Devs Logo" />
+        </a>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links">HOME</a>
+          </li>
+          <li class="navbar__item" id="dropdown__head">
+            <a class="navbar__links">PROJECTS</a>
+            <ul class="dropdown__content">
+              <li><a href="leaderboard.html">Leaderboard</a></li>
+              <li><a href="duckarmy.html">Duck Army</a></li>
+              <li><a href="duckpond.html">Duck Pond</a></li>
+              <li><a href="ducksweeper.html">DuckSweeper</a></li>
+              <li><a href="duckracer.html">Duck Racer</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a href="people.html" class="navbar__links">TEAM MEMBERS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <audio id="audioPlayer" src="./duck.mp3"></audio>
+    <h1>Quack!</h1>
+    <p>Click the button below to summon a duck army!</p>
+    <div>
+    <label for="armysize">Enter the size of your duck army:</label>
+    <input type="number" id="armysize" min="1" value="10" required>
+    <button onclick="createDuckArmy()">Summon your duck army</button>
+    <button onclick="battleDuckArmy()">Battle your duck army</button>
+    </div>
+    <div id="duckarmyfield">
+      <h1 id="duckbattlewinstatus"></h1>
+      <div id="duckarmyheader">
+        <h2>Your Duck Army</h2>
+        <div id="duckarmy"></div>
+      </div>
+      <div id="compduckarmyheader">
+        <h2>Opponent's Duck Army</h2>
+        <div id="compduckarmy"></div>
+      </div>
+    </div>
+  </body>
+</html>

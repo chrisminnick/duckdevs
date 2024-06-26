@@ -1,0 +1,112 @@
+.people h1 {
+  background-image: linear-gradient(to top, #13afea 30%, #31ffb2 100%);
+  background-size: 100%;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.people__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+}
+
+.people__card {
+  margin: 1rem;
+  height: 250px;
+  width: 220px;
+  border-radius: 15px;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.card__content {
+  background-color: rgba(20, 20, 20, 0.85);
+  padding: 10px;
+  position: absolute;
+  top: 155px;
+  left: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.people__card h2 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 1rem;
+}
+
+.people__card p {
+  margin-top: 1px;
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+}
+
+.people__card button {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 0.75rem;
+  color: #fff;
+  padding: 3px 6px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #005fc7;
+  cursor: pointer;
+}
+
+.people__card button:hover {
+  color: #005fc7;
+  background: #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.people__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+}
+
+.duck1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("../img/duck-contact-1.png");
+}
+
+.duck2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("../img/duck-contact-2.png");
+}
+
+.duck3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("../img/duck-contact-3.png");
+}
+
+.duck4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("../img/duck-contact-4.png");
+}
