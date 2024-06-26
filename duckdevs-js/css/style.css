@@ -12,6 +12,9 @@ body {
   color: white;
   text-align: center;
 }
+.footer a {
+  color: #ffffff;
+}
 #duck {
   width: 200px;
   height: 200px;
