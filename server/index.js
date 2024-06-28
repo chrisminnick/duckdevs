@@ -1,13 +1,14 @@
-const { createServer } = require('node:http');
+import express from 'express';
+import path from 'path';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const port = 3000;
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const app = express();
 
-const server = createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+app.use(express.static(path.join(__dirname, '../client/dist')))
 
-server.listen(port, () => {
-  console.log(`Server running at Port ${port}/`);
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`)
+})
