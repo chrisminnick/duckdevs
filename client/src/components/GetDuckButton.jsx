@@ -1,7 +1,7 @@
-import { React, useState } from "react";
+import { useState } from 'react';
 
 function GetDuckButton() {
-  const [duckImage, setDuckImage] = useState("");
+  const [duckImage, setDuckImage] = useState('');
   const [showDuck, setShowDuck] = useState(false);
   const [showCook, setShowCook] = useState(false);
 
@@ -9,18 +9,18 @@ function GetDuckButton() {
     setShowDuck(true);
     const randomNum = Math.floor(Math.random() * 32);
     if (randomNum === 0) {
-      setDuckImage("img/turkey_emoji.png");
+      setDuckImage('/img/turkey_emoji.png');
     } else {
-      setDuckImage("img/duck_emoji.png");
+      setDuckImage('/img/duck_emoji.png');
     }
     setShowCook(true);
   }
 
-  function cookDuck(){
-    setDuckImage('img/cooked_duck.png')
+  function cookDuck() {
+    setDuckImage('img/cooked_duck.png');
   }
 
-  function removeDuck(){
+  function removeDuck() {
     setShowDuck(false);
     setShowCook(false);
   }
