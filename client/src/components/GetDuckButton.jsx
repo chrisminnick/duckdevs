@@ -17,7 +17,7 @@ function GetDuckButton() {
   }
 
   function cookDuck() {
-    setDuckImage('img/cooked_duck.png');
+    setDuckImage('/img/cooked_duck.png');
   }
 
   function removeDuck() {
