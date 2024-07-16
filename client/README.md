@@ -1,8 +1,17 @@
-# React + Vite
+# DuckDevs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collaborative project by students in 2024 Travelers EDP Cohort 2
 
-Currently, two official plugins are available:
+# Credits
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Duck Racer by Dan
+- Get Duck Button by Anike
+- Duck Race Timer by Will S and Angie
+- Duck Battle by Chris T
+- Random Turkey by Will B
+- DuckSweeper by Angie
+- Duck Sounds by Zach
+- CSS Improvements by Arvind
+- Duck Race Leaderboard by Zach
+- Duck Race by Tucker
+- Cooked Duck by Dustin
