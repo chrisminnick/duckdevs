@@ -1,7 +1,7 @@
 const DuckSweeper = () => {
   return (
     <>
-      Duck Sweeper hasn&quot;t been converted to React yet.{' '}
+      Duck Sweeper hasn&apos;t been converted to React yet.{' '}
       <a href="/duckdevs-js/ducksweeper.html">Visit the vanilla JS version</a>.
     </>
   );
